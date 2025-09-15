@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WXYPOINT Premium Design System */
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 8%;
+    
+    /* Premium Black, White & Silver System */
+    --matte-black: 0 0% 8%;
+    --ghost-white: 0 0% 98%;
+    --silver: 0 0% 75%;
+    --silver-light: 0 0% 85%;
+    --silver-dark: 0 0% 65%;
+    --soft-gray-light: 0 0% 88%;
+    --soft-gray-medium: 0 0% 65%;
+    --soft-gray-dark: 0 0% 35%;
+    
+    /* Silver Accent Colors */
+    --electric-blue: 0 0% 75%;
+    --cyber-purple: 0 0% 75%;
+    --accent-glow: 0 0% 75%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 88%;
+    --secondary-foreground: 0 0% 8%;
+
+    --muted: 0 0% 88%;
+    --muted-foreground: 0 0% 35%;
+
+    --accent: 0 0% 75%;
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 0 0% 75%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Premium Typography & Animations */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@layer components {
+  /* Cinematic Loading Animation */
+  .loading-bar {
+    @apply relative h-1 bg-muted overflow-hidden;
+  }
+  
+  .loading-progress {
+    @apply absolute inset-y-0 left-0 bg-gradient-to-r from-accent to-accent;
+    transition: width 3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Smooth Scroll Animations */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Mobile-first responsive design */
+  @media (max-width: 414px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .section-cinematic {
+      min-height: 100vh;
+      padding: 1rem 0;
+    }
+    
+    .font-editorial {
+      line-height: 1.1;
+    }
+    
+    .font-minimal {
+      line-height: 1.5;
+    }
+  }
+
+  /* Cinematic Hover Effects */
+  .hover-glow {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 40px hsl(var(--accent-glow) / 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Elegant Parallax Effect */
+  .parallax-slow {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Premium Gradients */
+  .gradient-radial {
+    background: radial-gradient(circle at center, hsl(var(--silver) / 0.15), transparent 70%);
+  }
+  
+  .gradient-silver {
+    background: linear-gradient(135deg, hsl(var(--silver-light) / 0.8), hsl(var(--silver-dark) / 0.8));
+  }
+
+  /* Floating animations */
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(12deg); }
+    50% { transform: translateY(-20px) rotate(12deg); }
+  }
+
+  @keyframes float-medium {
+    0%, 100% { transform: translateY(0px) rotate(-6deg); }
+    50% { transform: translateY(-15px) rotate(-6deg); }
+  }
+
+  @keyframes float-fast {
+    0%, 100% { transform: translateY(0px) rotate(45deg); }
+    50% { transform: translateY(-10px) rotate(45deg); }
+  }
+
+  .animate-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+  }
+
+  .animate-float-medium {
+    animation: float-medium 4s ease-in-out infinite;
+  }
+
+  .animate-float-fast {
+    animation: float-fast 3s ease-in-out infinite;
+  }
+
+  /* Editorial Typography */
+  .text-editorial {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  
+  .text-minimal {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+  }
+
+  /* Immersive Sections */
+  .section-cinematic {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  /* Scanlines animation for loading screen */
+  @keyframes scanlines {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+  }
+
+  /* Walkthrough Animation */
+  @keyframes walkthrough {
+    0% { transform: translateX(-100%); opacity: 0; }
+    50% { transform: translateX(0%); opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+  }
+}
