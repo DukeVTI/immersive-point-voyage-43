@@ -68,7 +68,7 @@ export const JoinVision = () => {
   ];
 
   return (
-    <section id="join-vision" className="py-16 sm:py-24 lg:py-32 bg-ghost-white" ref={sectionRef}>
+    <section id="join-vision" className="py-16 sm:py-24 lg:py-32 bg-ghost-white relative isolate z-40" ref={sectionRef}>
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center space-y-12 sm:space-y-16">
           {/* Header */}
@@ -112,7 +112,7 @@ export const JoinVision = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="fade-in-up max-w-xl mx-auto">
+          <div className="fade-in-up max-w-xl mx-auto relative z-40 pointer-events-auto">
             {isSubmitted ? (
               <div className="bg-matte-black/5 backdrop-blur-sm p-6 sm:p-8 border border-soft-gray-light/30 rounded-lg text-center space-y-6">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
