@@ -68,15 +68,15 @@ export const JoinVision = () => {
   ];
 
   return (
-    <section id="join-vision" className="py-16 sm:py-24 lg:py-32 bg-ghost-white relative isolate z-40" ref={sectionRef}>
+    <section id="join-vision" className="py-16 sm:py-24 lg:py-32 bg-matte-black relative isolate z-40" ref={sectionRef}>
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center space-y-12 sm:space-y-16">
           {/* Header */}
           <div className="fade-in-up">
-            <h2 className="font-editorial text-3xl sm:text-4xl md:text-6xl text-matte-black mb-6 sm:mb-8 tracking-tight">
+            <h2 className="font-editorial text-3xl sm:text-4xl md:text-6xl text-ghost-white mb-6 sm:mb-8 tracking-tight">
               Join the Vision
             </h2>
-            <p className="font-minimal text-base sm:text-lg text-soft-gray-dark leading-relaxed max-w-2xl mx-auto px-4">
+            <p className="font-minimal text-base sm:text-lg text-ghost-white/70 leading-relaxed max-w-2xl mx-auto px-4">
               We're building the future of hospitality with visionary partners 
               who share our commitment to extraordinary experiences.
             </p>
@@ -88,10 +88,10 @@ export const JoinVision = () => {
               <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
                 <div className="w-6 h-6 bg-accent rounded-full" />
               </div>
-              <h3 className="font-editorial text-xl sm:text-2xl text-matte-black">
+              <h3 className="font-editorial text-xl sm:text-2xl text-ghost-white">
                 For Investors
               </h3>
-              <p className="font-minimal text-sm sm:text-base text-soft-gray-dark leading-relaxed">
+              <p className="font-minimal text-sm sm:text-base text-ghost-white/70 leading-relaxed">
                 Be part of redefining luxury hospitality. Join us in creating 
                 extraordinary spaces that generate exceptional returns.
               </p>
@@ -101,10 +101,10 @@ export const JoinVision = () => {
               <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
                 <div className="w-6 h-6 bg-accent rounded-full" />
               </div>
-              <h3 className="font-editorial text-xl sm:text-2xl text-matte-black">
+              <h3 className="font-editorial text-xl sm:text-2xl text-ghost-white">
                 For Creatives
               </h3>
-              <p className="font-minimal text-sm sm:text-base text-soft-gray-dark leading-relaxed">
+              <p className="font-minimal text-sm sm:text-base text-ghost-white/70 leading-relaxed">
                 Collaborate with our team to push the boundaries of design, 
                 technology, and experiential hospitality.
               </p>
@@ -114,14 +114,14 @@ export const JoinVision = () => {
           {/* Contact Form */}
           <div className="fade-in-up max-w-xl mx-auto relative z-40 pointer-events-auto">
             {isSubmitted ? (
-              <div className="bg-matte-black/5 backdrop-blur-sm p-6 sm:p-8 border border-soft-gray-light/30 rounded-lg text-center space-y-6">
+              <div className="bg-ghost-white/5 backdrop-blur-sm p-6 sm:p-8 border border-ghost-white/30 rounded-lg text-center space-y-6">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
                   <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="font-editorial text-xl text-matte-black">Thank You!</h3>
-                <p className="font-minimal text-sm text-soft-gray-dark">
+                <h3 className="font-editorial text-xl text-ghost-white">Thank You!</h3>
+                <p className="font-minimal text-sm text-ghost-white/70">
                   Your inquiry has been received. We'll be in touch within 24 hours to discuss your vision.
                 </p>
                 <button 
@@ -132,7 +132,7 @@ export const JoinVision = () => {
                 </button>
               </div>
             ) : (
-              <div className="bg-matte-black/5 backdrop-blur-sm p-6 sm:p-8 border border-soft-gray-light/30 rounded-lg">
+              <div className="bg-ghost-white/5 backdrop-blur-sm p-6 sm:p-8 border border-ghost-white/30 rounded-lg">
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <FormInput

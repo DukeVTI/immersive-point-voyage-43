@@ -11,7 +11,7 @@ const FormTextarea = React.forwardRef<HTMLTextAreaElement, FormTextareaProps>(
       <div className="w-full">
         <textarea
           className={cn(
-            "w-full bg-transparent border-b border-soft-gray-medium/50 py-3 px-0 font-minimal text-sm text-matte-black placeholder:text-soft-gray-dark focus:border-accent focus:outline-none transition-colors resize-none",
+            "w-full bg-transparent border-b border-soft-gray-medium/50 py-3 px-0 font-minimal text-sm text-ghost-white placeholder:text-ghost-white/50 focus:border-accent focus:outline-none transition-colors resize-none",
             error && "border-destructive focus:border-destructive",
             className
           )}
