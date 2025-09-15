@@ -12,7 +12,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
         <input
           type={type}
           className={cn(
-            "w-full bg-transparent border-b border-soft-gray-medium/50 py-3 px-0 font-minimal text-sm text-ghost-white placeholder:text-ghost-white/50 focus:border-accent focus:outline-none transition-colors",
+            "w-full bg-transparent border-b border-soft-gray-medium/50 py-3 px-0 font-minimal text-sm text-matte-black placeholder:text-soft-gray-dark focus:border-accent focus:outline-none transition-colors",
             error && "border-destructive focus:border-destructive",
             className
           )}

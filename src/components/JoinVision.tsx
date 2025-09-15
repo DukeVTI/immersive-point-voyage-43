@@ -73,7 +73,7 @@ export const JoinVision = () => {
         <div className="max-w-4xl mx-auto text-center space-y-12 sm:space-y-16">
           {/* Header */}
           <div className="fade-in-up">
-            <h2 className="font-editorial text-3xl sm:text-4xl md:text-6xl text-ghost-white mb-6 sm:mb-8 tracking-tight">
+            <h2 className="font-editorial text-3xl sm:text-4xl md:text-6xl text-matte-black mb-6 sm:mb-8 tracking-tight">
               Join the Vision
             </h2>
             <p className="font-minimal text-base sm:text-lg text-soft-gray-dark leading-relaxed max-w-2xl mx-auto px-4">
@@ -88,7 +88,7 @@ export const JoinVision = () => {
               <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
                 <div className="w-6 h-6 bg-accent rounded-full" />
               </div>
-              <h3 className="font-editorial text-xl sm:text-2xl text-ghost-white">
+              <h3 className="font-editorial text-xl sm:text-2xl text-matte-black">
                 For Investors
               </h3>
               <p className="font-minimal text-sm sm:text-base text-soft-gray-dark leading-relaxed">
@@ -101,7 +101,7 @@ export const JoinVision = () => {
               <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
                 <div className="w-6 h-6 bg-accent rounded-full" />
               </div>
-              <h3 className="font-editorial text-xl sm:text-2xl text-ghost-white">
+              <h3 className="font-editorial text-xl sm:text-2xl text-matte-black">
                 For Creatives
               </h3>
               <p className="font-minimal text-sm sm:text-base text-soft-gray-dark leading-relaxed">
@@ -120,7 +120,7 @@ export const JoinVision = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="font-editorial text-xl text-ghost-white">Thank You!</h3>
+                <h3 className="font-editorial text-xl text-matte-black">Thank You!</h3>
                 <p className="font-minimal text-sm text-soft-gray-dark">
                   Your inquiry has been received. We'll be in touch within 24 hours to discuss your vision.
                 </p>
