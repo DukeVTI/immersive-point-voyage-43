@@ -1,14 +1,14 @@
 import { useEffect, useRef } from 'react';
 import { Property3DContainer } from '@/components/3d/Property3DContainer';
-import property1 from '@/assets/property-1.jpg';
-import property2 from '@/assets/property-2.jpg';
-import property3 from '@/assets/property-3.jpg';
+import property1 from '@/assets/farmhouse/IMG_6036.png';
+import property2 from '@/assets/718/IMG_6024.png';
+import property3 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151244.png';
 
 const properties = [
   {
     id: 1,
     name: "Farm House",
-    location: "Luxury Rural Retreat",
+    location: "Sanford, Florida",
     type: "Farm House",
     image: property1,
     link: "https://www.airbnb.com/l/z3t6MUbU"
@@ -16,15 +16,15 @@ const properties = [
   {
     id: 2,
     name: "718 Bungalow",
-    location: "Modern Urban Living",
+    location: "College Park, Florida",
     type: "Contemporary Bungalow",
     image: property2,
     link: "https://www.airbnb.com/l/5GltsUJv"
   },
   {
     id: 3,
-    name: "The Trailhouse Retreat",
-    location: "Nature's Gateway",
+    name: "Trailhouse Retreat",
+    location: "Sanford, Florida",
     type: "Mountain Retreat",
     image: property3,
     link: "https://www.airbnb.com/l/2s4AJKv5"
