@@ -3,13 +3,14 @@ import { StarryBackground } from '@/components/3d/StarryBackground';
 import { HeroBackground3D } from '@/components/3d/HeroBackground3D';
 import { MouseParticles } from '@/components/3d/MouseParticles';
 import { Footer } from '@/components/Footer';
-import farmhouse from '@/assets/farmhouse.jpg';
-import bungalow from '@/assets/bungalow.jpg';
-import trailhouse from '@/assets/trailhouse.jpg';
-import kissimmee from '@/assets/kissimmee.jpg';
-import floridaRoom from '@/assets/florida-room.jpg';
-import sweetGum from '@/assets/sweet-gum.jpg';
-import modernOasis from '@/assets/modern-oasis.jpg';
+import farmhouse from '@/assets/farmhouse/IMG_6036.png';
+import bungalow from '@/assets/718/IMG_6024.png';
+import trailhouse from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151244.png';
+import kissimmee from '@/assets/pinemeadows/Screenshot 2025-08-19 150646.png';
+import floridaRoom from '@/assets/marcy/Screenshot 2025-08-19 145943.png';
+import sweetGum from '@/assets/sweetgumcottage/Screenshot 2025-08-19 151012.png';
+import modernOasis from '@/assets/modernoasis/Screenshot 2025-08-19 150442.png';
+import capecoral from '@/assets/releaseretreat/IMG_6033.png'
 
 const properties = [
   {
@@ -23,7 +24,7 @@ const properties = [
   {
     id: 2,
     name: "718 Bungalow",
-    location: "Modern Urban Living",
+    location: "College Park, Florida",
     type: "Contemporary Bungalow",
     image: bungalow,
     link: "https://www.airbnb.com/l/5GltsUJv"
@@ -31,23 +32,23 @@ const properties = [
   {
     id: 3,
     name: "The Trailhouse Retreat",
-    location: "Nature's Gateway",
+    location: "Sanford, Florida",
     type: "Mountain Retreat",
     image: trailhouse,
     link: "https://www.airbnb.com/l/2s4AJKv5"
   },
   {
     id: 4,
-    name: "Kissimmee Relaxing Getaway",
-    location: "Florida Paradise",
+    name: "Pine Meadows Retreat",
+    location: "Orlando, Florida",
     type: "Vacation Rental",
     image: kissimmee,
     link: "https://www.airbnb.com/l/n20co3j7"
   },
   {
     id: 5,
-    name: "The Florida Room",
-    location: "Sunshine State Living",
+    name: "Marcy Lounge",
+    location: "Longwood, Florida",
     type: "Tropical Escape",
     image: floridaRoom,
     link: "https://www.airbnb.com/l/ag5b3tWZ"
@@ -55,17 +56,25 @@ const properties = [
   {
     id: 6,
     name: "Sweet Gum Cottage",
-    location: "Charming Countryside",
+    location: "Sanford, Florida",
     type: "Cottage Retreat",
     image: sweetGum,
     link: "https://www.airbnb.com/l/CYDlAuWH"
   },
   {
     id: 7,
-    name: "The Modern Oasis",
-    location: "Contemporary Luxury",
+    name: "Modern Oasis",
+    location: "Orlando, Florida",
     type: "Modern Villa",
     image: modernOasis,
+    link: "https://www.airbnb.com/l/5iAdufLO"
+  },
+  {
+    id: 7,
+    name: "Release Retreat",
+    location: "Cape Coral, Florida",
+    type: "Release Pavilion",
+    image: capecoral,
     link: "https://www.airbnb.com/l/5iAdufLO"
   }
 ];
