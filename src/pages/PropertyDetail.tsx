@@ -6,17 +6,72 @@ import { HeroBackground3D } from '@/components/3d/HeroBackground3D';
 import { MouseParticles } from '@/components/3d/MouseParticles';
 import { Button } from '@/components/ui/button';
 import { Footer } from '@/components/Footer';
+
+//Imports for Farmhouse 1917
 import farmhouse from '@/assets/farmhouse/IMG_6036.png';
 import farmhouse1 from '@/assets/farmhouse/IMG_6037.png';
 import farmhouse2 from '@/assets/farmhouse/IMG_6038.png';
 import farmhouse3 from '@/assets/farmhouse/IMG_6039.png';
 import farmhouse4 from '@/assets/farmhouse/IMG_6040.png';
-import bungalow from '@/assets/bungalow.jpg';
-import trailhouse from '@/assets/trailhouse.jpg';
-import kissimmee from '@/assets/kissimmee.jpg';
-import floridaRoom from '@/assets/florida-room.jpg';
-import sweetGum from '@/assets/sweet-gum.jpg';
-import modernOasis from '@/assets/modern-oasis.jpg';
+
+//Imports for 718 Bungalow 
+import bungalow from '@/assets/718/IMG_6024.png';
+import bungalow1 from '@/assets/718/IMG_6025.png';
+import bungalow2 from '@/assets/718/IMG_6026.png';
+
+//Imports for TrailHouse Retreat 
+import trailhouse from '@/assets/trailhouseretreat/IMG_6028.png';
+import trailhouse1 from '@/assets/trailhouseretreat/IMG_6030.png';
+import trailhouse2 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151149.png';
+import trailhouse3 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151206.png';
+import trailhouse4 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151214.png';
+import trailhouse5 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151221.png';
+import trailhouse6 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151237.png';
+import trailhouse7 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151244.png';
+import trailhouse8 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151251.png';
+import trailhouse9 from '@/assets/trailhouseretreat/Screenshot 2025-08-19 151257.png';
+
+//imports for Pine Meadows Retreat 
+import kissimmee from '@/assets/pinemeadows/Screenshot 2025-08-19 150626.png';
+import kissimmee1 from '@/assets/pinemeadows/Screenshot 2025-08-19 150636.png';
+import kissimmee2 from '@/assets/pinemeadows/Screenshot 2025-08-19 150646.png';
+import kissimmee3 from '@/assets/pinemeadows/Screenshot 2025-08-19 150657.png';
+import kissimmee4 from '@/assets/pinemeadows/Screenshot 2025-08-19 150703.png';
+import kissimmee5 from '@/assets/pinemeadows/Screenshot 2025-08-19 150712.png';
+import kissimmee6 from '@/assets/pinemeadows/Screenshot 2025-08-19 150721.png';
+import kissimmee7 from '@/assets/pinemeadows/Screenshot 2025-08-19 150730.png';
+import kissimmee8 from '@/assets/pinemeadows/Screenshot 2025-08-19 150738.png';
+import kissimmee9 from '@/assets/pinemeadows/Screenshot 2025-08-19 150746.png';
+import kissimmee10 from '@/assets/pinemeadows/Screenshot 2025-08-19 150755.png';
+import kissimmee11 from '@/assets/pinemeadows/Screenshot 2025-08-19 150804.png';
+import kissimmee12 from '@/assets/pinemeadows/Screenshot 2025-08-19 150816.png';
+
+//Import for Marcy Lounge
+import floridaRoom from '@/assets/marcy/Screenshot 2025-08-19 145943.png';
+import floridaRoom1 from '@/assets/marcy/Screenshot 2025-08-19 150109.png';
+import floridaRoom2 from '@/assets/marcy/Screenshot 2025-08-19 150123.png';
+import floridaRoom3 from '@/assets/marcy/Screenshot 2025-08-19 150147.png';
+import floridaRoom4 from '@/assets/marcy/Screenshot 2025-08-19 150156.png';
+
+//Import for Sweet Gum Cottage
+import sweetGum from '@/assets/sweetgumcottage/Screenshot 2025-08-19 150950.png';
+import sweetGum1 from '@/assets/sweetgumcottage/Screenshot 2025-08-19 151012.png';
+import sweetGum2 from '@/assets/sweetgumcottage/Screenshot 2025-08-19 151031.png';
+import sweetGum3 from '@/assets/sweetgumcottage/Screenshot 2025-08-19 151042.png';
+import sweetGum4 from '@/assets/sweetgumcottage/Screenshot 2025-08-19 151053.png';
+
+//Import for Modern Oasis
+import modernOasis from '@/assets/modernoasis/Screenshot 2025-08-19 150400.png';
+import modernOasis1 from '@/assets/modernoasis/Screenshot 2025-08-19 150407.png';
+import modernOasis2 from '@/assets/modernoasis/Screenshot 2025-08-19 150419.png';
+import modernOasis3 from '@/assets/modernoasis/Screenshot 2025-08-19 150427.png';
+import modernOasis4 from '@/assets/modernoasis/Screenshot 2025-08-19 150442.png';
+
+//Import for Release Retreat
+import capecoral from '@/assets/releaseretreat/IMG_6032.png'
+import capecoral from '@/assets/releaseretreat/IMG_6033.png'
+import capecoral from '@/assets/releaseretreat/IMG_6034.png'
+import capecoral from '@/assets/releaseretreat/IMG_6035.png'
 
 // Extended property data with multiple images
 const properties = [
@@ -36,11 +91,11 @@ const properties = [
   {
     id: 2,
     name: "718 Bungalow",
-    location: "Modern Urban Living",
+    location: "College Park, Florida",
     type: "Contemporary Bungalow",
     rating: 4.8,
     reviews: 89,
-    images: [bungalow, farmhouse, kissimmee],
+    images: [bungalow, bungalow1, bungalow2],
     description: "A sophisticated urban retreat featuring contemporary design and premium amenities. Perfect for those seeking modern comfort in the heart of the city.",
     features: ["3 Bedrooms", "2 Bathrooms", "Modern Kitchen", "Rooftop Terrace", "Smart Home Features"],
     amenities: ["WiFi", "Kitchen", "Parking", "Air Conditioning", "Workspace", "City Views"],
@@ -49,11 +104,11 @@ const properties = [
   {
     id: 3,
     name: "The Trailhouse Retreat",
-    location: "Nature's Gateway",
+    location: "Sanford, Florida",
     type: "Mountain Retreat",
     rating: 5.0,
     reviews: 64,
-    images: [trailhouse, modernOasis, sweetGum],
+    images: [trailhouse, trailhouse1, trailhouse2, trailhouse3, trailhouse4, trailhouse5, trailhouse6, trailhouse7, trailhouse8, trailhouse9],
     description: "Escape to nature in this beautifully crafted mountain retreat. Surrounded by hiking trails and pristine wilderness, it's the perfect getaway for outdoor enthusiasts.",
     features: ["2 Bedrooms", "2 Bathrooms", "Hot Tub", "Hiking Access", "Mountain Views"],
     amenities: ["WiFi", "Kitchen", "Fireplace", "Hot Tub", "Hiking", "Mountain Views"],
@@ -61,12 +116,12 @@ const properties = [
   },
   {
     id: 4,
-    name: "Kissimmee Relaxing Getaway",
-    location: "Florida Paradise",
+    name: "Pine Meadows Retreat",
+    location: "Orlando, Florida",
     type: "Vacation Rental",
     rating: 4.7,
     reviews: 203,
-    images: [kissimmee, floridaRoom, bungalow],
+    images: [kissimmee, kissimmee1, kissimmee2, kissimmee3, kissimmee4, kissimmee5, kissimmee6, kissimmee7, kissimmee8, kissimmee9, kissimmee10, kissimmee11, kissimmee12],
     description: "Your gateway to Florida's magic, this charming vacation rental offers easy access to theme parks while providing a peaceful retreat after exciting days.",
     features: ["5 Bedrooms", "4 Bathrooms", "Game Room", "Pool Access", "Near Theme Parks"],
     amenities: ["WiFi", "Kitchen", "Pool", "Game Room", "Theme Park Access", "Family Friendly"],
@@ -74,12 +129,12 @@ const properties = [
   },
   {
     id: 5,
-    name: "The Florida Room",
-    location: "Sunshine State Living",
+    name: "Marcy Lounge",
+    location: "Longwood, Florida",
     type: "Tropical Escape",
     rating: 4.9,
     reviews: 156,
-    images: [floridaRoom, kissimmee, trailhouse],
+    images: [floridaRoom, floridaRoom1, floridaRoom2, floridaRoom3, floridaRoom4],
     description: "Embrace the Florida lifestyle in this bright and airy tropical escape. Features stunning outdoor spaces and easy access to beaches and local attractions.",
     features: ["3 Bedrooms", "2 Bathrooms", "Screened Porch", "Tropical Garden", "Beach Access"],
     amenities: ["WiFi", "Kitchen", "Beach Access", "Garden", "Outdoor Dining", "Tropical Views"],
@@ -88,11 +143,11 @@ const properties = [
   {
     id: 6,
     name: "Sweet Gum Cottage",
-    location: "Charming Countryside",
+    location: "Sanford, Florida",
     type: "Cottage Retreat",
     rating: 4.8,
     reviews: 92,
-    images: [sweetGum, farmhouse, modernOasis],
+    images: [sweetGum, sweetGum1, sweetGum2, sweetGum3, sweetGum4],
     description: "A delightful cottage that combines rustic charm with modern comforts. Perfect for a romantic getaway or peaceful family vacation in the countryside.",
     features: ["2 Bedrooms", "1 Bathroom", "Cozy Fireplace", "Garden Views", "Peaceful Setting"],
     amenities: ["WiFi", "Kitchen", "Fireplace", "Garden Views", "Peaceful", "Romantic"],
@@ -100,12 +155,25 @@ const properties = [
   },
   {
     id: 7,
-    name: "The Modern Oasis",
-    location: "Contemporary Luxury",
+    name: "Modern Oasis",
+    location: "Orlando, Florida",
     type: "Modern Villa",
     rating: 5.0,
     reviews: 78,
-    images: [modernOasis, bungalow, floridaRoom],
+    images: [modernOasis, modernOasis1, modernOasis2, modernOasis3, modernOasis4],
+    description: "Experience ultimate luxury in this contemporary villa featuring cutting-edge design, premium amenities, and stunning architectural details.",
+    features: ["4 Bedrooms", "3 Bathrooms", "Infinity Pool", "Wine Cellar", "Chef's Kitchen"],
+    amenities: ["WiFi", "Kitchen", "Infinity Pool", "Wine Cellar", "Luxury", "Chef's Kitchen"],
+    link: "https://www.airbnb.com/l/5iAdufLO"
+  },
+  {
+    id: 8,
+    name: "Release Retreat",
+    location: "Cape Coral, Florida",
+    type: "Modern Villa",
+    rating: 5.0,
+    reviews: 78,
+    images: [capecoral, capecoral1, capecoral2, capecoral3],
     description: "Experience ultimate luxury in this contemporary villa featuring cutting-edge design, premium amenities, and stunning architectural details.",
     features: ["4 Bedrooms", "3 Bathrooms", "Infinity Pool", "Wine Cellar", "Chef's Kitchen"],
     amenities: ["WiFi", "Kitchen", "Infinity Pool", "Wine Cellar", "Luxury", "Chef's Kitchen"],
