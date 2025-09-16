@@ -69,9 +69,9 @@ import modernOasis4 from '@/assets/modernoasis/Screenshot 2025-08-19 150442.png'
 
 //Import for Release Retreat
 import capecoral from '@/assets/releaseretreat/IMG_6032.png'
-import capecoral from '@/assets/releaseretreat/IMG_6033.png'
-import capecoral from '@/assets/releaseretreat/IMG_6034.png'
-import capecoral from '@/assets/releaseretreat/IMG_6035.png'
+import capecoral1 from '@/assets/releaseretreat/IMG_6033.png'
+import capecoral2 from '@/assets/releaseretreat/IMG_6034.png'
+import capecoral3 from '@/assets/releaseretreat/IMG_6035.png'
 
 // Extended property data with multiple images
 const properties = [
