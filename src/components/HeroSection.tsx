@@ -4,6 +4,7 @@ import { MouseParticles } from '@/components/3d/MouseParticles';
 import { StarryBackground } from '@/components/3d/StarryBackground';
 import { AnimatedText } from '@/components/3d/AnimatedText';
 import heroBackground from '@/assets/hero-bg.jpg';
+import wLogo from '@/assets/w-logo.png';
 
 export const HeroSection = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -46,8 +47,8 @@ export const HeroSection = () => {
             {/* Logo container with solid black premium effect */}
             <div className="relative bg-matte-black border border-silver/30 rounded-2xl p-4 sm:p-6 shadow-2xl transition-all duration-700 hover:border-silver/50 hover:shadow-silver/30">
               <img 
-                src="/lovable-uploads/cef92f60-a1cd-4bd0-b481-cdc34ccd9fb4.png" 
-                alt="W Logo"
+                src={wLogo} 
+                alt="WXYPOINT Logo"
                 className="w-8 sm:w-12 h-8 sm:h-12 object-contain transition-transform duration-500 group-hover:scale-110"
               />
               {/* Premium glow effect */}

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { StarryBackground } from './3d/StarryBackground';
+import wLogo from '@/assets/w-logo.png';
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -139,7 +140,7 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
               <div className="absolute inset-0 bg-gradient-to-r from-silver/20 via-silver/30 to-silver/20 rounded-2xl blur-xl animate-pulse" />
               <div className="relative bg-matte-black/60 backdrop-blur-xl border border-silver/20 rounded-2xl p-8 shadow-2xl">
                 <img 
-                  src="/lovable-uploads/0d0e2528-63b1-42bf-8dd2-228b28b16862.png" 
+                  src={wLogo} 
                   alt="WXYPOINT Logo"
                   className="w-32 h-32 object-contain"
                 />
