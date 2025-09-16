@@ -6,7 +6,11 @@ import { HeroBackground3D } from '@/components/3d/HeroBackground3D';
 import { MouseParticles } from '@/components/3d/MouseParticles';
 import { Button } from '@/components/ui/button';
 import { Footer } from '@/components/Footer';
-import farmhouse from '@/assets/farmhouse.jpg';
+import farmhouse from '@/assets/farmhouse/IMG_6036.png';
+import farmhouse1 from '@/assets/farmhouse/IMG_6037.png';
+import farmhouse2 from '@/assets/farmhouse/IMG_6038.png';
+import farmhouse3 from '@/assets/farmhouse/IMG_6039.png';
+import farmhouse4 from '@/assets/farmhouse/IMG_6040.png';
 import bungalow from '@/assets/bungalow.jpg';
 import trailhouse from '@/assets/trailhouse.jpg';
 import kissimmee from '@/assets/kissimmee.jpg';
@@ -19,11 +23,11 @@ const properties = [
   {
     id: 1,
     name: "Farm House",
-    location: "Luxury Rural Retreat",
+    location: "Sanford, Florida",
     type: "Farm House",
     rating: 4.9,
     reviews: 127,
-    images: [farmhouse, bungalow, trailhouse],
+    images: [farmhouse, farmhouse1, farmhouse2, farmhouse3, farmhouse4],
     description: "Experience the perfect blend of rustic charm and modern luxury in this stunning farmhouse retreat. Nestled in the countryside, this property offers breathtaking views and unparalleled tranquility.",
     features: ["4 Bedrooms", "3 Bathrooms", "Private Pool", "Large Garden", "Fireplace"],
     amenities: ["WiFi", "Kitchen", "Parking", "Air Conditioning", "Hot Tub", "Pet Friendly"],
